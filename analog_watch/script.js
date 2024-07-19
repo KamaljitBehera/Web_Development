@@ -1,0 +1,21 @@
+let hour=document.getElementById("hours");
+let min=document.getElementById("mins");
+let sec=document.getElementById("secs");
+function gettimes(){
+    let date=new Date();
+    let h=date.getHours();
+    console.log(h);
+    let m=date.getMinutes();
+    let s=date.getSeconds();
+    let hh=30*h;
+    console.log(hh);
+    let mm=6*m;
+    console.log(mm);
+    let ss=6*s;
+    console.log(ss);
+    hour.style.transform=`rotate(${hh}deg)`;
+    min.style.transform=`rotate(${mm}deg)`;
+   sec.style.transform=`rotate(${ss}deg)`;
+   console.log("kamal");
+};
+setInterval(gettimes,1000);
