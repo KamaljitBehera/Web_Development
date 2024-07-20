@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./sunrise_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    backdrop-filter: blur(5px);
+}
+.content{
+    border: 1px solid rgba(194, 191, 191,0.6);
+    background-color: rgba(255, 255, 255,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 3rem;
+}
+.banner{
+margin-top: -2rem;
+font-size:30px;
+text-align: center;
+}
+span{
+    display: grid;
+    place-items: center;
+}
+input{
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+    background-color: rgba(0,0,0,0.4);
+    width: 15em;
+    outline: none;
+}
+.result{
+    border: 2px solid rgba(128, 128, 128,0.2);
+    font-size: 17px;
+    font-weight: 700;
+    width: 20em;
+    height: auto;
+}
+.btn{
+    width: 8em;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0.4);
+}
