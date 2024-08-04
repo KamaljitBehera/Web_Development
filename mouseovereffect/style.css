@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+    /* background-image: url("https://i.natgeofe.com/k/7bfcf2d2-542e-44f0-962a-c36f2efa98a5/heart_16x9.jpg?w=636&h=358"); */
+
+}
+.parent{
+    color: blue;
+    position: absolute;
+    display:inline-block;
+    pointer-events: none;
+    height: 100px;
+    width: 100px;
+    background-image: url("heart-removebg-preview.jpg"); 
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    animation: animate 6s linear;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 1;
+        filter: hue-rotate(360deg);
+    }
+}
