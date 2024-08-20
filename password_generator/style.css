@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right ,#ccef1b,#31a4f3);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.container{
+ position: absolute;
+ top: 36%;
+ left: 16%;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 3px 3px limegreen;
+    & span{
+        text-decoration: underline;
+        text-underline-offset:6px;
+        color: rgb(9, 89, 9);
+        font-size: 30px;
+        display:block;
+        margin-top: -10px;
+        text-shadow: 1px 1px 3px black;
+    }
+}
+input{
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 16px;
+width: 70%;
+outline: 0px;
+}
+input::placeholder{
+    color: black;
+    font-weight: 500;
+}
+input:focus{
+    outline:3px solid black;
+}
+.btn{
+    height: 35px;
+    color: rgba(255, 162, 0, 0.841);
+    font-weight: 600;
+    font-size: 25px;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 15px;
+    border-radius:16px ;
+    margin-left: 10px;
+}
+.btn_div{
+    margin-left: 50px;
+    display: flex;
+}
+i{
+   
+   text-shadow: 2px 2px 3px green;
+    color: lime;
+    font-size: 50px;
+}
+.disPass{
+    height: 40px;
+    width: 70%;
+    margin: 10px 10px 10px 0px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:1212px){
+    input{
+        font-size: 18px;
+        width: 80%;
+    }
+    .btn{
+        width:250px;
+        font-size: 20px;
+        padding:1px ;
+
+}
+i{
+    font-size: 40px;
+}
+.btn_div{
+    margin-left: 60px;
+}
+}
+@media (max-width:999px){
+    .btn_div .btn{
+        width: 220px;
+        font-size: 18px;
+        height: 30px;
+    }
+    .btn_div i{
+        font-size: 35px;
+    }
+    .btn_div{
+        margin-left: 30px;
+    }
+}
+@media (max-width:839px){
+    
+    input{
+       height: 35px;
+        width: 90%;
+    }
+    .btn-div .btn{
+        width:210px;
+        font-size: 18px;
+        padding:1px ;
+
+}
+input::placeholder{
+    font-size: 19px;
+    font-weight: 500;
+}
+.btn_div{
+    margin-left: 10px;
+}
+}
+
+@media (max-width:669px){
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+         transform: translate(-50%,-50%);
+       }
+       h1{
+        font-size: 30px;
+        & span{
+            font-size: 25px;
+        }
+    }
+    input{
+        height: 30px;
+        padding-left: 10px;
+    }
+    input::placeholder{
+        font-size: 15px;
+        font-weight: 500;
+        
+    }
+   .btn_div i{
+        font-size: 32px;
+    }
+    .btn_div .btn{
+        width: 200px;
+        height: 27px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:539px){
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+         transform: translate(-50%,-50%);
+       }
+       h1{ 
+        font-size: 27px;
+        & span{
+            font-size: 20px;
+            display:block;
+            margin-top: -5px;
+        }
+    }
+    input{
+        height: 30px;
+        padding-left: 10px;
+        width: 100%;
+        padding-top: 2px;
+    }
+    input::placeholder{
+        font-size: 15px;
+        font-weight: 500;
+        
+    }
+   .btn_div i{
+        font-size: 28px;
+    }
+    .btn_div {
+        margin-left: 20px;
+    }
+
+    .btn_div .btn{
+        width: 170px;
+        height: 27px;
+        font-size: 16px;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+}
+@media (max-width:390px){
+       h1{ 
+        font-size: 23px;
+        & span{
+            font-size: 18px;
+            display:block;
+            margin-top: -5px;
+        }
+    }
+    input{
+        height: 26px;
+        padding-left: 10px;
+        padding-top: 2px;
+        width: 100%;
+        outline: 1px solid black;
+    }
+    input::placeholder{
+        
+        font-size: 8px;
+        font-weight: 500;
+        
+    }
+   .btn_div i{
+        font-size: 25px;
+    }
+
+    .btn_div .btn{
+        width: 120px;
+        height: 23px;
+        font-size: 12px;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+}
+@media (max-width:433px){
+    h1{ 
+     font-size: 23px;
+     & span{
+         font-size: 18px;
+         display:block;
+         margin-top: -5px;
+     }
+ }
+ input{
+     height: 26px;
+     padding-left: 10px;
+     padding-top: 2px;
+     width: 100%;
+ }
+ input::placeholder{
+     
+     font-size: 14px;
+     font-weight: 500;
+     
+ }
+ .btn_div{
+    margin-left: 0px;
+ }
+.btn_div i{
+     font-size: 25px;
+ }
+
+ .btn_div .btn{
+     width: 120px;
+     height: 23px;
+     font-size: 12px;
+     text-wrap: nowrap;
+     overflow: hidden;
+ }
+}
