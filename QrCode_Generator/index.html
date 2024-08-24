@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR code generator</title>
+</head>
+<body>
+    <div class="container">
+        <p>Enter the Url or Text</p>
+        <input type="text" placeholder="Enter the Url or text" id="qrtext">
+        <div id="qrbox">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=kamal" alt="" id="qrimg">
+        </div>
+        <button id="qrbutton">Generate QR code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
